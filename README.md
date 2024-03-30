@@ -9,4 +9,6 @@
 7. Upon withdrawal, the entire stake amount and the rewards should be sent to the user. 
 8. There is no partial withdrawal of the stake amount
 ```
+
+# Test Result 
 ![alt text](https://github.com/Maheswaranx15/TokenStaking/blob/main/Result.png)
