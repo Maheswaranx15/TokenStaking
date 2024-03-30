@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.23;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -28,7 +29,7 @@ contract Staking {
         require(stakes[msg.sender].amount > 0, "No stake found for the user");
         _;
     }
-    
+
     // Function to update token address by owner
     function updateTokenAddress(address _newTokenAddress) public onlyOwner {
         stakeToken = _newTokenAddress;
