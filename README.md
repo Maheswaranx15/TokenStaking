@@ -9,3 +9,4 @@
 7. Upon withdrawal, the entire stake amount and the rewards should be sent to the user. 
 8. There is no partial withdrawal of the stake amount
 ```
+![alt text](/Users/mahesh/Desktop/Staking/Result.png)
