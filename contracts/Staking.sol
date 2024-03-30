@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;
+pragma solidity 0.8.23;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -28,7 +28,11 @@ contract Staking {
         require(stakes[msg.sender].amount > 0, "No stake found for the user");
         _;
     }
-
+    
+    // Function to update token address by owner
+    function updateTokenAddress(address _newTokenAddress) public onlyOwner {
+        stakeToken = _newTokenAddress;
+    }
     // Stake DEFI tokens
     function stake(uint _amount) public {
         // Transfer DEFI tokens from user to contract
